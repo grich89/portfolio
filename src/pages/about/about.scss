@@ -54,7 +54,9 @@
 
         &:focus,
         &:hover {
-          transform: scale(1.1);
+          @media (min-width: 1030px) {
+            transform: scale(1.1);
+          }
 
           strong,
           svg {
