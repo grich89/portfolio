@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b2fcb63e.chunk.css",
+    "main.js": "/portfolio/static/js/main.59275760.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.59275760.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.efe324c6.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.efe324c6.js.map",
+    "static/js/2.bc488b07.chunk.js": "/portfolio/static/js/2.bc488b07.chunk.js",
+    "static/js/2.bc488b07.chunk.js.map": "/portfolio/static/js/2.bc488b07.chunk.js.map",
+    "static/js/3.5f709224.chunk.js": "/portfolio/static/js/3.5f709224.chunk.js",
+    "static/js/3.5f709224.chunk.js.map": "/portfolio/static/js/3.5f709224.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.b2fcb63e.chunk.css.map": "/portfolio/static/css/main.b2fcb63e.chunk.css.map",
+    "static/js/2.bc488b07.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bc488b07.chunk.js.LICENSE.txt",
+    "static/media/arrowright.ac843114.svg": "/portfolio/static/media/arrowright.ac843114.svg",
+    "static/media/audit.b3269879.svg": "/portfolio/static/media/audit.b3269879.svg",
+    "static/media/cfgi-desktop.d7a15dde.png": "/portfolio/static/media/cfgi-desktop.d7a15dde.png",
+    "static/media/cfgi-mobile.76b35346.png": "/portfolio/static/media/cfgi-mobile.76b35346.png",
+    "static/media/chat.f75823cd.svg": "/portfolio/static/media/chat.f75823cd.svg",
+    "static/media/email.cd269ace.svg": "/portfolio/static/media/email.cd269ace.svg",
+    "static/media/eye.da6c8f36.svg": "/portfolio/static/media/eye.da6c8f36.svg",
+    "static/media/github.ead38c16.svg": "/portfolio/static/media/github.ead38c16.svg",
+    "static/media/hc-desktop.8a383667.png": "/portfolio/static/media/hc-desktop.8a383667.png",
+    "static/media/hc-mobile.e3083eb9.png": "/portfolio/static/media/hc-mobile.e3083eb9.png",
+    "static/media/illustrator.283903f3.svg": "/portfolio/static/media/illustrator.283903f3.svg",
+    "static/media/linkedin.04817362.svg": "/portfolio/static/media/linkedin.04817362.svg",
+    "static/media/nyb-desktop.4f38e6a2.png": "/portfolio/static/media/nyb-desktop.4f38e6a2.png",
+    "static/media/nyb-mobile.34245c8d.png": "/portfolio/static/media/nyb-mobile.34245c8d.png",
+    "static/media/react.0a35219c.svg": "/portfolio/static/media/react.0a35219c.svg",
+    "static/media/ss-desktop.36968fdb.png": "/portfolio/static/media/ss-desktop.36968fdb.png",
+    "static/media/ss-mobile.7d957a53.png": "/portfolio/static/media/ss-mobile.7d957a53.png",
+    "static/media/wordpress.5e0f4901.svg": "/portfolio/static/media/wordpress.5e0f4901.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efe324c6.js",
+    "static/js/2.bc488b07.chunk.js",
+    "static/css/main.b2fcb63e.chunk.css",
+    "static/js/main.59275760.chunk.js"
+  ]
+}
