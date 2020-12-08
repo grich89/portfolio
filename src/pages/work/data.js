@@ -59,7 +59,7 @@ const data = {
           alt: "CFGI desktop design"
         },
         link: "https://cfgi.com",
-        description: "<p>Full website rebuild in Wordpress for an account advisory firm.</p>"
+        description: "<p>Full website rebuild in Wordpress for an accounting advisory firm.</p>"
       }
     },
     {
@@ -75,7 +75,7 @@ const data = {
           src: ss_desktop,
           alt: "Secret Santa desktop design"
         },
-        link: "https://nybcreative.com",
+        link: "https://grich89.github.io/secret-santa/",
         description: "<p>This React app allows you to create a Secret Santa list. I created this app as a side project to help me learn the basics of React. Users start by choosing between two options, finding an existing Secret Santa list or creating a new list. The create a new list option requires a list name and at least three participants. Users can share the list name they choose with others that are participating in the Secret Santa. Those users can look up the list by clicking on the “Find My List” button and entering in the list name. All data is stored in a Google Firebase database.</p>"
       }
     }
