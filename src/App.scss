@@ -1,0 +1,205 @@
+// vars
+$pink: #FA52F2;
+$yellow: #EDE576;
+$green: #BBFF9C;
+$gray: rgb(112, 112, 132);
+
+:root {
+  --mobileHeaderHt: 88px;
+  --desktopHeaderHt: 122px;
+}
+
+// transitions and animations
+.fade {
+  &-enter {
+    opacity: .01;
+  }
+
+  &-enter-active {
+    opacity: .01;
+  }
+
+  &-enter-done {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: .01;
+    transition: opacity .5s ease-in-out;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// mixins
+// =======================================
+//    #UTILITY - VISUALLY-HIDDEN
+//
+// To be used on links (etc) that should not
+// display their text, ex. a icon button.
+//
+// https://a11yproject.com/posts/how-to-hide-content/
+// =======================================
+
+@mixin visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+.hidden,
+.visually-hidden {
+  @include visually-hidden;
+}
+
+@mixin stroke-width($property) {
+	-webkit-text-stroke-width: $property;
+	-moz-text-stroke-width: $property;
+}
+
+@mixin stroke-color($property) {
+	-webkit-text-stroke-color: $property;
+	-moz-text-stroke-color: $property;
+}
+
+// global styles
+body {
+  background-color: #fff;
+  font-size: 16px;
+  margin-top: var(--mobileHeaderHt);
+
+  @media (min-width: 1030px) {
+    margin-top: var(--desktopHeaderHt);
+  }
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h1, h2 {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  font-size: 2em;
+  font-weight: 900;
+
+  @media (min-width: 1030px) {
+    font-size: 2.25em;
+  }
+}
+
+button {
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 25px;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  font-weight: 800;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  transition: .4s all ease;
+
+  @media (min-width: 1030px) {
+    letter-spacing: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    background: #000;
+    color: #fff;
+    transform: translateY(-5px);
+  }
+
+  svg {
+    height: 10px;
+    margin-left: .5rem;
+    margin-top: 2px;
+    order: 2;
+    width: 10px;
+  }
+}
+
+a:not(.button) {
+  background:
+     linear-gradient(
+       to bottom, darken($yellow, 15%) 0%,
+       darken($yellow, 15%) 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #000;
+  display: inline-block;
+  font-weight: 800;
+  line-height: 150%;
+  text-decoration: none;
+  transition: .4s all ease;
+
+  &:hover,
+  &:focus {
+    background-size: 3px 50px;
+  }
+}
+
+div, header {
+  box-sizing: border-box;
+}
+
+.global-header {
+  background-color: rgba(#fff, 0.8);
+  padding: 0.5rem 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .container {
+    align-items: center;
+    display: flex;
+  }
+
+  img {
+    max-height: 66px;
+
+    @media (min-width: 1030px) {
+      max-height: 100px;
+    }
+  }
+
+  &__logo {
+    a {
+      background: none;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+}

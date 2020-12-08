@@ -1,0 +1,19 @@
+.primary-nav {
+  margin-left: auto;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 1rem;
+
+      @media (min-width: 1030px) {
+        font-size: 20px;
+        margin-left: 2rem;
+      }
+    }
+  }
+}

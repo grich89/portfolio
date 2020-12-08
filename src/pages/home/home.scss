@@ -1,0 +1,29 @@
+@import '../../app.scss';
+
+.home {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - var(--mobileHeaderHt));
+  text-align: center;
+
+  @media (min-width: 1030px) {
+    height: calc(100vh - var(--desktopHeaderHt));
+  }
+
+  p {
+    font-size: 22px;
+    margin: 2rem 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+
+    @media (min-width: 1030px) {
+      font-size: 4em;
+    }
+
+    span {
+      color: $pink;
+    }
+  }
+}

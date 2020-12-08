@@ -1,0 +1,45 @@
+@import '../../app.scss';
+
+.footer {
+  padding: 1rem;
+
+  nav {
+    ul {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      li {
+        margin: 0 .5rem;
+      }
+
+      svg {
+        height: 30px;
+        transition: .4s color ease;
+        width: 30px;
+      }
+
+      a {
+        align-items: center;
+        background: none;
+        border-radius: 25px;
+        justify-content: center;
+        display: inline-flex;
+        height: 50px;
+        width: 50px;
+
+        &:hover {
+          background-color: $pink;
+
+          svg {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

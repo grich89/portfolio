@@ -1,0 +1,27 @@
+@import '../../app.scss';
+
+.button {
+  align-items: center;
+  background: darken($yellow, 15%);
+  border-radius: 30px;
+  color: #000;
+  display: inline-flex;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: .4s all ease;
+
+  &:focus,
+  &:hover {
+    background: $pink;
+    color: #fff;
+    transform: translateY(-5px);
+  }
+
+  svg {
+    height: 16px;
+    margin-left: 0.25rem;
+    margin-top: 2px;
+    width: 16px;
+  }
+}

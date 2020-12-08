@@ -1,0 +1,130 @@
+@import '../../app.scss';
+
+.about {
+  h1 {
+    margin: 0;
+  }
+
+  &__offerings {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1030px;
+    min-height: calc(100vh - var(--mobileHeaderHt));
+    padding: 1.5rem;
+
+    @media (min-width: 1030px) {
+      min-height: calc(100vh - var(--desktopHeaderHt));
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &-grid {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @media (min-width: 1030px) {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 2rem;
+      }
+
+      &--item {
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        align-items: center;
+        display: flex;
+        cursor: default;
+        margin-bottom: 1rem;
+        transition: .4s all ease;
+
+        strong {
+          transition: .4s color ease;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &:focus,
+        &:hover {
+          transform: scale(1.1);
+
+          strong,
+          svg {
+            color: $pink;
+          }
+        }
+
+        &.spin {
+          svg {
+            animation: App-logo-spin infinite 20s linear;
+          }
+        }
+
+        svg {
+          height: 50px;
+          transition: .4s color ease;
+          width: 50px;
+
+          @media (min-width: 1030px) {
+            height: 75px;
+            width: 75px;
+          }
+        }
+
+        span {
+          display: block;
+          padding-left: 1.5rem;
+          width: calc(100% - 85px);
+
+          @media (min-width: 1030px) {
+            width: calc(100% - 95px);
+          }
+        }
+      }
+    }
+  }
+
+  &__timeline {
+    &-container {
+      margin: 0 auto;
+      max-width: 1030px;
+      padding: 1.5rem;
+    }
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &--milestone {
+      display: flex;
+      margin-bottom: 1rem;
+
+      p {
+        margin: 0;
+        padding-left: 1rem;
+        width: calc(100% - 50px);
+      }
+
+      strong {
+        width: 50px;
+        text-align: center;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__cta {
+    padding-top: 2rem;
+  }
+}

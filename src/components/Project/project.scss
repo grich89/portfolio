@@ -1,0 +1,43 @@
+.project {
+  opacity: 0;
+
+  img {
+    max-width: 100%;
+  }
+
+  &__close {
+    svg {
+      margin-left: 0;
+      margin-right: 0.5rem;
+      order: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  &__wrapper {
+    @media(min-width: 1030px) {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__media {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    p {
+      display: block;
+    }
+
+    @media (min-width: 1030px) {
+      max-width: 500px;
+    }
+  }
+}

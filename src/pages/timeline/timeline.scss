@@ -1,0 +1,68 @@
+@import '../../app.scss';
+
+.timeline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - var(--mobileHeaderHt));
+
+  @media (min-width: 1030px) {
+    min-height: calc(100vh - var(--desktopHeaderHt));
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1030px;
+    padding: 1.5rem;
+  }
+
+  &__inner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-milestone {
+      display: flex;
+      line-height: 150%;
+      padding: 0.5rem 0;
+      transform: translateX(0px);
+      transition: .4s transform ease;
+
+      @media (min-width: 1030px) {
+        font-size: 22px;
+      }
+
+      &:hover,
+      &:focus {
+        cursor: default;
+        transform: translateX(5px);
+
+        strong {
+          color: $pink;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding-left: 1rem;
+        width: calc(100% - 50px);
+      }
+
+      strong {
+        font-weight: 800;
+        text-align: center;
+        transition: .4s color ease;
+        width: 50px;
+
+        @media (min-width: 1030px) {
+          width: 75px;
+        }
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
