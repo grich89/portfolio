@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -40,12 +40,12 @@ function App() {
         <Route
           render={({ location }) => (
           <TransitionGroup>
-            <CSSTransition key={location.key} classNames="fade" timeout={500}>
+            <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/timeline" component={Timeline} />
-                <Route exact path="/work" component={Work} />
+                <Route exact path="/about/" component={About} />
+                <Route exact path="/timeline/" component={Timeline} />
+                <Route exact path="/work/" component={Work} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
