@@ -3,15 +3,15 @@ const data = {
   timeline: [
     {
       year: "1999",
-      milestone: "Created my first ever website with the long defunct free pagebuilder expage.com"
+      milestone: "Spent too much time on AOL and created my first website"
     },
     {
       year: "2005",
-      milestone: "Learned WordPress and immersed myself in young adult blogging culture"
+      milestone: "Learned to create a WordPress theme"
     },
     {
       year: "2011",
-      milestone: "Graduated from <strong>Merrimack College</strong> with a Bachelor in Communications degree"
+      milestone: "Graduated from <strong>Merrimack College</strong> with a BA in Communications"
     },
     {
       year: "2014",
