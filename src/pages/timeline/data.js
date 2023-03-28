@@ -24,6 +24,10 @@ const data = {
     {
       year: "2020",
       milestone: "Moved to <strong>NYC!</strong>"
+    },
+    {
+      year: "2021",
+      milestone: "Hired as Front End Developer at <a href=\"https://madwell.com\" target=\"_blank\" rel=\"nofollow\">Madwell</a>"
     }
   ]
 }

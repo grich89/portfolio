@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser';
+import HTMLReactParser from 'html-react-parser';
 
 import './timeline.scss';
 
@@ -14,7 +14,7 @@ function Timeline() {
           {data.timeline?.map((row, i) => (
             <li key={i} className="timeline__inner-milestone">
               <strong>{row.year}</strong>
-              <p>{ReactHtmlParser(row.milestone)}</p>
+              <p>{HTMLReactParser(row.milestone)}</p>
             </li>
           ))}
         </ul>

@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser';
+import HTMLReactParser from 'html-react-parser';
 import SVG from 'react-inlinesvg'
 
 import './about.scss'
@@ -12,7 +12,7 @@ function About() {
     <div className="about">
       <div className="about__offerings">
         <h1>{data.offerings.title}</h1>
-        {ReactHtmlParser(data.offerings.description)}
+        {HTMLReactParser(data.offerings.description)}
 
         <ul className="about__offerings-grid">
           {data.offerings.list?.map((item, i) => (
@@ -21,7 +21,7 @@ function About() {
               className={item.class ? `about__offerings-grid--item ${item.class}` : 'about__offerings-grid--item'}
             >
               <SVG src={item.icon} />
-              <span>{ReactHtmlParser(item.text)}</span>
+              <span>{HTMLReactParser(item.text)}</span>
             </li>
           ))}
         </ul>

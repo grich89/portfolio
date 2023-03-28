@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser';
+import HTMLReactParser from 'html-react-parser';
 import SVG from 'react-inlinesvg';
 
 import arrow from '../../images/icons/arrowright.svg';
@@ -42,7 +42,7 @@ const Project = ({setProjectOpen, details }) => {
 
           <h1>{details.title}</h1>
 
-          {ReactHtmlParser(details.description)}
+          {HTMLReactParser(details.description)}
 
           <Button
             url={details.link}

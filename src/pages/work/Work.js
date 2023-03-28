@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { CSSTransition } from 'react-transition-group'
-import ReactHtmlParser from 'react-html-parser';
+import HTMLReactParser from 'html-react-parser';
 import SVG from 'react-inlinesvg';
 
 import explore from '../../images/icons/audit.svg';
@@ -40,7 +40,7 @@ const Work = () => {
         <div className="work__projects-wrapper">
           <div className="work__intro">
             <h1>{data.title}</h1>
-            {ReactHtmlParser(data.description)}
+            {HTMLReactParser(data.description)}
           </div>
 
           <ul className="work__projects">

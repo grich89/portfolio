@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser';
+import HTMLReactParser from 'html-react-parser';
 
 import Button from '../../components/Button/Button.js';
 
@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className="home">
       <div className="container">
-        <h1>{ReactHtmlParser(data.title)}</h1>
-        {ReactHtmlParser(data.description)}
+        <h1>{HTMLReactParser(data.title)}</h1>
+        {HTMLReactParser(data.description)}
         {data.cta ?
           <Button
             url={data.cta.url}
